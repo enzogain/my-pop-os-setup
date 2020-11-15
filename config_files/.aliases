@@ -10,7 +10,7 @@ alias envv=". ~/artifakt/docker-console/env-artifakt/envv.sh"
 
 # -- Git
 alias gs="git status"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gpp="git pull && git push"
 alias gp="git push"
 alias gaa="git add --all"
@@ -21,11 +21,9 @@ gfc () {
 	git commit -m "$branch: $*"
 }
 
-
 copy() {
 	xclip -sel cli < $1
 }
-
 
 # -- Docker
 alias docker="sudo docker"

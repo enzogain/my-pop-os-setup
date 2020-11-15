@@ -215,6 +215,65 @@ plugins=([...] zsh-syntax-highlighting)
 sudo apt install tmux
 ```
 
+## Install tpm (Tmux Plugin Manager)
+*https://github.com/tmux-plugins/tpm*
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+- Add at the end of `.tmux.conf` `run '~/.tmux/plugins/tpm/tpm'`
+
+## Install tpm Dracula/tmux
+*https://github.com/dracula/tmux*
+
+Add in `.tmux.conf`
+```
+set -g @plugin 'dracula/tmux'
+set -g @dracula-show-battery false
+set -g @dracula-show-network false
+set -g @dracula-show-location false
+set -g @dracula-show-fahrenheit false
+set -g @dracula-border-contrast true
+set -g @dracula-cpu-usage true
+set -g @dracula-ram-usage true
+set -g @dracula-gpu-usage true
+set -g @dracula-military-time true
+set -g @dracula-show-timezone false
+set -g @dracula-show-weather false
+```
+
+## .tmux.conf
+
+Current `.tmux.conf` [here](config_files/.tmux.conf)
+
+## Install vim
+*https://github.com/vim/vim*
+
+```
+sudo apt install vim
+```
+
+## Install vim theme dracula
+*https://github.com/dracula/vim*
+
+```
+mkdir -p ~/.vim/pack/themes/start
+cd ~/.vim/pack/themes/start
+git clone https://github.com/dracula/vim.git dracula
+```
+
+Add this `~/.vimrc`
+```
+packadd! dracula
+syntax enable
+let g:dracula_colorterm = 0 " without that, background is grey (https://github.com/dracula/vim/issues/96)
+colorscheme dracula
+```
+
+## .vimrc
+
+Current `.vimrc` [here](config_files/.vimrc)
+
 ## Intall aws-cli
 *https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html#cliv2-linux-install*
 
