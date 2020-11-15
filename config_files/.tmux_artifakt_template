@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SESSION='artifakt'
+
+tmux new-session -d -s $SESSION
+tmux rename-window -t $SESSION:1 console
+tmux split-window -d
+tmux new-window -t $SESSION -a -n ipa
+tmux new-window -t $SESSION -a -n git
+tmux split-window -d
+tmux new-window -t $SESSION -a -n misc
+tmux select-window -t $SESSION:1
+tmux attach -t $SESSION

@@ -246,6 +246,10 @@ set -g @dracula-show-weather false
 
 Current `.tmux.conf` [here](config_files/.tmux.conf)
 
+## Tmux template for artifakt
+
+See [.tmux_artifakt_template](config_files/.tmux_artifakt_template)
+
 ## Install vim
 *https://github.com/vim/vim*
 
