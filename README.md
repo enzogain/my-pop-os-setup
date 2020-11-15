@@ -236,12 +236,16 @@ sudo apt install htop
 
 ## Generate ssh keys
 
+```
 ssh-keygen -t rsa -b 4096 -C "name@hostname"
+```
 
 ## Install xclip
 *https://github.com/astrand/xclip*
 
+```
 sudo apt install xclip
+```
 
 ## Install tablePlus
 *https://tableplus.com/blog/2019/10/tableplus-linux-installation.html*
@@ -310,14 +314,15 @@ sudo apt install php7.4 php7.4-mysql php7.4-xml php7.4-intl php7.4-gd php7.4-cur
 ```
 sudo apt install gnome-tweaks
 ```
+> Note: install gnome-extensions in browser if not already added
 
 ## Install gnome extensions
 
-https://extensions.gnome.org/extension/19/user-themes/
-https://extensions.gnome.org/extension/517/caffeine/
-https://extensions.gnome.org/extension/708/panel-osd/
-https://extensions.gnome.org/extension/701/top-panel-workspace-scroll/
-https://extensions.gnome.org/extension/545/hide-top-bar/
+- https://extensions.gnome.org/extension/19/user-themes/
+- https://extensions.gnome.org/extension/517/caffeine/
+- https://extensions.gnome.org/extension/708/panel-osd/
+- https://extensions.gnome.org/extension/701/top-panel-workspace-scroll/
+- https://extensions.gnome.org/extension/545/hide-top-bar/
 
 ## Install arc-theme
 *https://github.com/horst3180/arc-theme*
