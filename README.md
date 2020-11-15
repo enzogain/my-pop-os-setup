@@ -41,6 +41,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 - Remove backup install made of previous zsh config`rm .zshrc.pro-oh-my-zsh`
 
+Note:
+- [.zshrc](config_files/.zshrc)
+
 ## Install node version manager: "n"
 *https://github.com/tj/n*
 
@@ -127,7 +130,7 @@ sudo update-alternatives --config x-terminal-emulator
 
 ## Install configuration of alacritty
 
-- Place [config_files/.alacritty.yml](.alacritty.yml) in `$HOME`
+- Place [.alacritty.yml](config_files/.alacritty.yml) in `$HOME`
 
 ## Install pure
 *https://github.com/sindresorhus/pure*
@@ -156,7 +159,7 @@ flatpak install flathub com.spotify.Client
 
 ## Install alias
 
-- Add in [config_files/.aliases](.aliases) in `$HOME`
+- Add in [.aliases](config_files/.aliases) in `$HOME`
 - Include it in `.zshrc` with `source $HOME/.aliases`
 
 ## Install the fuck
