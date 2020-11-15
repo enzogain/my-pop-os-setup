@@ -1,0 +1,32 @@
+alias zshconfig="vim ~/.zshrc"
+alias zshreload=". ~/.zshrc"
+alias aliases="vim ~/.aliases"
+
+# -- Artifakt aliases
+alias artifakt="~/artifakt"
+alias ipa="~/artifakt/ipa"
+alias console="~/artifakt/console"
+alias envv=". ~/artifakt/docker-console/env-artifakt/envv.sh"
+
+# -- Git
+alias gs="git status"
+alias gc="git commit"
+alias gpp="git pull && git push"
+alias gp="git push"
+alias gaa="git add --all"
+
+alias git-clean-branches="git branch | grep -v -E 'develop|master|staging' | xargs git branch -d"
+gfc () {
+	branch=$(git branch | grep '*' | cut -c 3-)
+	git commit -m "$branch: $*"
+}
+
+
+copy() {
+	xclip -sel cli < $1
+}
+
+
+# -- Docker
+alias docker="sudo docker"
+alias docker-compose="sudo docker-compose"
