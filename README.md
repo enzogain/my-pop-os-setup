@@ -419,6 +419,7 @@ Inherits=La-Capitaine,Moka,Adwaita,gnome,hicolor
 - Download `.deb` and `sudo dpgk -i [...]`
 
 ## Compose key
+*All default compose is here: `/usr/share/X11/locale/en_US.UTF-8/Compose`*
 
 - Enable compose key on `Alt-Rigth` in gnome settings
 - Copy [.XCompose](config_files/.XCompose) file in `$HOME`
