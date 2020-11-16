@@ -422,3 +422,15 @@ Inherits=La-Capitaine,Moka,Adwaita,gnome,hicolor
 
 - Enable compose key on `Alt-Rigth` in gnome settings
 - Copy [.XCompose](config_files/.XCompose) file in `$HOME`
+
+## Play/Previous/Next shortcut for Spotify
+
+- In `Settings > Keyboard > Keyboard Shortcuts > Custom Shortcuts`
+- Add following
+```
+Super+8: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+Super+7: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
+Super+9: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+```
