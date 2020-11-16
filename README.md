@@ -420,5 +420,5 @@ Inherits=La-Capitaine,Moka,Adwaita,gnome,hicolor
 
 ## Compose key
 
-- Enable compose key on gnome settings
+- Enable compose key on `Alt-Rigth` in gnome settings
 - Copy [.XCompose](config_files/.XCompose) file in `$HOME`
