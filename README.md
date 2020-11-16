@@ -423,14 +423,26 @@ Inherits=La-Capitaine,Moka,Adwaita,gnome,hicolor
 - Enable compose key on `Alt-Rigth` in gnome settings
 - Copy [.XCompose](config_files/.XCompose) file in `$HOME`
 
-## Play/Previous/Next shortcut for Spotify
+## Play/Previous/Next shortcut for Spotify 
+*Those shorcuts will trigger action only on Spotify! If want to be globally just set it in `Settings > Keyboard > Keyboard Shortcuts > Sound and Media`)
 
 - In `Settings > Keyboard > Keyboard Shortcuts > Custom Shortcuts`
 - Add following
 ```
-Super+8: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+# Super+8
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 
-Super+7: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+# Super+7 
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 
-Super+9: dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+# Super+9
+dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 ```
+
+## Set shortcut for volume
+
+- In `Settings > Keyboard > Keyboard Shortcuts > Sound and Media`
+
+- Volume down on `Super+-`
+- Volume up on `Super+=`
+- Volume mute/unmute on `Super+0`
