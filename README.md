@@ -417,3 +417,8 @@ Inherits=La-Capitaine,Moka,Adwaita,gnome,hicolor
 *https://discord.com/*
 
 - Download `.deb` and `sudo dpgk -i [...]`
+
+## Compose key
+
+- Enable compose key on gnome settings
+- Copy [.XCompose](config_files/.XCompose) file in `$HOME`
