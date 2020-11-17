@@ -37,13 +37,16 @@ window:
   dimensions:
     columns: 90
     lines: 30
-  padding: 
+  padding:
     x: 5
-    y: 5 
+    y: 5
   scrolling: 10000
-  
 
 bell:
   animation: EaseOutExpo
   duration: 2
   color: '#ffffff'
+
+mouse:
+  url:
+    modifiers: Control
