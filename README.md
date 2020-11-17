@@ -396,8 +396,8 @@ sudo apt install arc-theme
 - select it in tweak tool
 
 ## Install Arc icons + la capitaine
-https://github.com/horst3180/arc-icon-theme
-https://github.com/keeferrourke/la-capitaine-icon-theme
+*https://github.com/horst3180/arc-icon-theme*
+*https://github.com/keeferrourke/la-capitaine-icon-theme*
 
 ```
 mkdir .icons
@@ -425,7 +425,7 @@ Inherits=La-Capitaine,Moka,Adwaita,gnome,hicolor
 - Copy [.XCompose](config_files/.XCompose) file in `$HOME`
 
 ## Play/Previous/Next shortcut for Spotify 
-*Those shorcuts will trigger action only on Spotify! If want to be globally just set it in `Settings > Keyboard > Keyboard Shortcuts > Sound and Media`)
+*Those shorcuts will trigger action only on Spotify! If want to be globally just set it in `Settings > Keyboard > Keyboard Shortcuts > Sound and Media`)*
 
 - In `Settings > Keyboard > Keyboard Shortcuts > Custom Shortcuts`
 - Add following
@@ -447,3 +447,10 @@ dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPl
 - Volume down on `Super+-`
 - Volume up on `Super+=`
 - Volume mute/unmute on `Super+0`
+
+## Install httpie
+*https://httpie.io/*
+
+```
+sudo apt install httpie
+```
