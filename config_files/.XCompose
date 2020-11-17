@@ -5,3 +5,6 @@ include "%L"
 <Multi_key> <a> <a> : "à"
 <Multi_key> <u> <u> : "ù"
 <Multi_key> <c> <c> : "ç"
+<Multi_key> <o> <o> : "ô"
+
+
