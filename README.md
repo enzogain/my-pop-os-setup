@@ -454,3 +454,12 @@ dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPl
 ```
 sudo apt install httpie
 ```
+
+## Remove anoying shortcut: <Super>P
+*https://askubuntu.com/questions/68463/how-to-disable-global-super-p-shortcut#:~:text=Install%20the%20dconf%2Dtools%20package,Uncheck%20the%20active%20checkbox.*
+
+- Get value of `gsettings get org.gnome.mutter.keybindings switch-monitor`
+- In my case it returns `['<Super>p', 'XF86Display']`
+- Add set empty array to remove the shortcut
+- `gsettings set org.gnome.mutter.keybindings switch-monitor "[]"`
+
