@@ -25,6 +25,10 @@ copy() {
 	xclip -sel cli < $1
 }
 
+dump-artifakt() {
+	mysqldump -h $MYSQL_HOST -u $MYSQL_USER -p"$MYSQL_PASSWORD" --set-gtid-purged=OFF --column-statistics=0 $1 > "$HOME/artifakt/dumps/$1_$(date +%Y-%m-%d_%H-%M-%S).sql"
+}
+
 # -- Docker
 alias docker="sudo docker"
 alias docker-compose="sudo docker-compose"
