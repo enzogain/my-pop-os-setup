@@ -15,7 +15,7 @@ alias gpp="git pull && git push"
 alias gp="git push"
 alias gaa="git add --all"
 
-alias git-clean-branches="git branch | grep -v -E 'develop|master|staging' | xargs git branch -d"
+alias git-clean-branches="git branch | grep -v -E 'develop|master|staging|main' | xargs git branch -d"
 gfc () {
 	branch=$(git branch | grep '*' | cut -c 3-)
 	git commit -m "$branch: $*"
