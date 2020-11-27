@@ -463,3 +463,13 @@ sudo apt install httpie
 - Add set empty array to remove the shortcut
 - `gsettings set org.gnome.mutter.keybindings switch-monitor "[]"`
 
+## Install PulseAudio Volume Control
+*https://freedesktop.org/software/pulseaudio/pavucontrol/*  
+
+Control output sound of each application
+
+```
+sudo apt install pavucontrol
+```
+
+
