@@ -473,3 +473,13 @@ sudo apt install pavucontrol
 ```
 
 
+## Remove general `Ctrl+Shift+e` shortcut
+*https://github.com/microsoft/vscode/issues/48480#issuecomment-414464079*
+
+If we keep this shortcut, we are not able to use this one for open "Explorer" in VSCode  
+
+```
+ibus-setup
+```
+
+Go to > Emoji > Remove "Emoji annotation" shortcut (it should be set to the unwanted shortcut Ctrl+Shift+e)
