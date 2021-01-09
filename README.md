@@ -1,4 +1,4 @@
-# My OS setup :rocket:
+# My Pop!_OS setup :rocket:
 *Pop!_OS 20.10*
 
 ## Change display settings
