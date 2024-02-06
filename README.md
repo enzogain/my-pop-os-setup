@@ -71,7 +71,18 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 cargo install tealdeer
 tldr --version
 ```
+- Setup with ohmyzsh
+  - If you’re using oh-my-zsh, create a directory for custom plugins (if it doesn’t exist):
 
+    `mkdir -p $ZSH_CUSTOM/plugins/tldr`
+
+  - Create a symbolic link to the zsh completion script:
+
+    `ln -s bin/completion/zsh/_tldr $ZSH_CUSTOM/plugins/tldr/_tldr`
+
+  - Add tldr to your oh-my-zsh plugins. Edit your ~/.zshrc file and add it to the plugins section:
+
+    `plugins=(git tmux tldr)`
 
 ## Install Alacritty
 *https://github.com/alacritty/alacritty/blob/master/INSTALL.md#clone-the-source-code*
